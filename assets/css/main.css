@@ -3729,16 +3729,31 @@ input, select, textarea {
 				}
 		
 				@media screen and (max-width: 480px) {
-		
-					#bannerIndex {
-						position:relative;
-						left:1%;
-						margin: -4em 0 0 -1em;
-					}
-		
-					#bannerIndex.major {
-						height: 5px;
-					}
+
+                    #bannerIndex {
+                        padding: 0 0 0 0;
+                        position: relative;
+                        left: 1%;
+                        margin: -4em 0 0 -1em;
+                    }
+
+                        #bannerIndex h1 {
+                            font-size: 2em;
+                        }
+
+                        #bannerIndex > .inner .content {
+                            display: block;
+                        }
+
+                            #bannerIndex > .inner .content > * {
+                                margin-right: 0;
+                            }
+
+                        #bannerIndex.major {
+                            height: 7em;
+                            min-height: 0;
+                            max-height: none;
+                        }
 		
 				}
 
