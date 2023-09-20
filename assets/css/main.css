@@ -3696,6 +3696,35 @@ input, select, textarea {
 					}
 		
 				}
+
+                @media screen and (max-width: 950px) and (max-height: 400px) {
+
+                    #bannerIndex {
+                        padding: 0 0 0 0;
+                        position: relative;
+                        top: -80px;
+                        left: 1%;
+                        margin: -2.5em 0 0 0;
+                    }
+
+                        #bannerIndex h1 {
+                            font-size: 2em;
+                        }
+
+                        #bannerIndex > .inner .content {
+                            display: block;
+                        }
+
+                            #bannerIndex > .inner .content > * {
+                                margin-right: 0;
+                            }
+
+                        #bannerIndex.major {
+                            height: 6em;
+                            min-height: 0;
+                            max-height: none;
+                        }
+                }
 		
 				@media screen and (max-width: 736px) {
 		
